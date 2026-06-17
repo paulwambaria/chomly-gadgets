@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Phone, Mail, MapPin, Heart } from "lucide-react";
 
 const footerLinks = {
@@ -94,14 +95,9 @@ export default function Footer() {
 
           {/* Brand column */}
           <div className="col-span-2 md:col-span-3 lg:col-span-1">
-            <Link href="/" className="inline-flex items-center gap-2.5 mb-5">
-              <div className="w-8 h-8 rounded-[10px] flex items-center justify-center font-black text-white text-sm"
-                style={{ background: "linear-gradient(135deg, #0071E3, #0051B3)" }}>C</div>
-              <div>
-                <div className="font-black text-white text-[17px] tracking-tight leading-none">
-                  Chomly<span className="text-[#0071E3]"> Gadgets</span>
-                </div>
-                <div className="text-[9px] text-[#6E6E73] tracking-[0.12em] uppercase font-semibold mt-0.5">KE-Deals</div>
+            <Link href="/" className="inline-block mb-5">
+              <div className="bg-white rounded-xl px-3 py-2 inline-block">
+                <Image src="/logo.png" alt="Chomly Gadgets KE-Deals" width={150} height={63} className="h-[48px] w-auto object-contain" />
               </div>
             </Link>
 

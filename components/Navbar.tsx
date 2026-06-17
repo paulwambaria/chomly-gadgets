@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Search, ShoppingCart, Menu, X, Phone, ChevronDown, Heart, Truck, MessageCircle } from "lucide-react";
 import { useCart } from "@/lib/cart";
 
@@ -87,18 +88,8 @@ export default function Navbar() {
       >
         <div className="wrap flex items-center justify-between h-[60px]">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2.5 shrink-0 select-none" onClick={() => setOpen(false)}>
-            <div className="w-8 h-8 rounded-[10px] flex items-center justify-center font-black text-white text-sm"
-              style={{ background: "linear-gradient(135deg, #0071E3, #0051B3)" }}>
-              C
-            </div>
-            <div className="leading-none">
-              <div>
-                <span className="font-black text-[#1D1D1F] text-[17px] tracking-tight">Chomly</span>
-                <span className="font-black text-[#0071E3] text-[17px] tracking-tight"> Gadgets</span>
-              </div>
-              <div className="text-[9px] text-[#6E6E73] tracking-[0.12em] uppercase font-semibold mt-[1px]">KE-Deals</div>
-            </div>
+          <Link href="/" className="shrink-0 select-none" onClick={() => setOpen(false)}>
+            <Image src="/logo.png" alt="Chomly Gadgets KE-Deals" width={160} height={67} className="h-[44px] w-auto object-contain" priority />
           </Link>
 
           {/* Desktop nav */}
@@ -227,10 +218,8 @@ export default function Navbar() {
         }}
       >
         <div className="flex items-center justify-between px-5 py-4 border-b border-[#F5F5F7]">
-          <Link href="/" onClick={() => setOpen(false)} className="flex items-center gap-2">
-            <div className="w-7 h-7 rounded-[8px] flex items-center justify-center font-black text-white text-xs"
-              style={{ background: "linear-gradient(135deg, #0071E3, #0051B3)" }}>C</div>
-            <span className="font-black text-[#1D1D1F] text-[15px]">Chomly Gadgets</span>
+          <Link href="/" onClick={() => setOpen(false)}>
+            <Image src="/logo.png" alt="Chomly Gadgets KE-Deals" width={140} height={59} className="h-[38px] w-auto object-contain" />
           </Link>
           <button onClick={() => setOpen(false)} className="p-2 rounded-lg hover:bg-[#F5F5F7] transition-colors">
             <X size={18} />
