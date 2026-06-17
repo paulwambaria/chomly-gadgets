@@ -86,10 +86,10 @@ export default function Navbar() {
           boxShadow: scrolled ? "0 1px 0 #E8E8ED, 0 4px 20px rgba(0,0,0,0.06)" : "0 1px 0 #F5F5F7",
         }}
       >
-        <div className="wrap flex items-center justify-between h-[90px]">
+        <div className="wrap flex items-center justify-between h-[110px]">
           {/* Logo */}
           <Link href="/" className="shrink-0 select-none" onClick={() => setOpen(false)}>
-            <Image src="/logo.png" alt="Chomly Gadgets KE-Deals" width={320} height={135} className="h-[76px] w-auto object-contain" priority />
+            <Image src="/logo.png" alt="Chomly Gadgets KE-Deals" width={420} height={177} className="h-[100px] w-auto object-contain" priority />
           </Link>
 
           {/* Desktop nav */}
