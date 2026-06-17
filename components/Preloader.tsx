@@ -53,9 +53,9 @@ export default function Preloader() {
         <Image
           src="/logo.png"
           alt="Chomly Gadgets KE-Deals"
-          width={280}
-          height={118}
-          className="w-[240px] md:w-[280px] h-auto object-contain"
+          width={360}
+          height={152}
+          className="w-[300px] md:w-[360px] h-auto object-contain"
           priority
         />
       </div>

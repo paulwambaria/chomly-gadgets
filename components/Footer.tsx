@@ -97,7 +97,7 @@ export default function Footer() {
           <div className="col-span-2 md:col-span-3 lg:col-span-1">
             <Link href="/" className="inline-block mb-5">
               <div className="bg-white rounded-xl px-3 py-2 inline-block">
-                <Image src="/logo.png" alt="Chomly Gadgets KE-Deals" width={150} height={63} className="h-[48px] w-auto object-contain" />
+                <Image src="/logo.png" alt="Chomly Gadgets KE-Deals" width={200} height={84} className="h-[64px] w-auto object-contain" />
               </div>
             </Link>
 

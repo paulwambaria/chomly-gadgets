@@ -86,10 +86,10 @@ export default function Navbar() {
           boxShadow: scrolled ? "0 1px 0 #E8E8ED, 0 4px 20px rgba(0,0,0,0.06)" : "0 1px 0 #F5F5F7",
         }}
       >
-        <div className="wrap flex items-center justify-between h-[60px]">
+        <div className="wrap flex items-center justify-between h-[70px]">
           {/* Logo */}
           <Link href="/" className="shrink-0 select-none" onClick={() => setOpen(false)}>
-            <Image src="/logo.png" alt="Chomly Gadgets KE-Deals" width={160} height={67} className="h-[44px] w-auto object-contain" priority />
+            <Image src="/logo.png" alt="Chomly Gadgets KE-Deals" width={220} height={93} className="h-[56px] w-auto object-contain" priority />
           </Link>
 
           {/* Desktop nav */}
@@ -219,7 +219,7 @@ export default function Navbar() {
       >
         <div className="flex items-center justify-between px-5 py-4 border-b border-[#F5F5F7]">
           <Link href="/" onClick={() => setOpen(false)}>
-            <Image src="/logo.png" alt="Chomly Gadgets KE-Deals" width={140} height={59} className="h-[38px] w-auto object-contain" />
+            <Image src="/logo.png" alt="Chomly Gadgets KE-Deals" width={180} height={76} className="h-[50px] w-auto object-contain" />
           </Link>
           <button onClick={() => setOpen(false)} className="p-2 rounded-lg hover:bg-[#F5F5F7] transition-colors">
             <X size={18} />
